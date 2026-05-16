@@ -1,0 +1,37 @@
+{
+  "vendor": "Golden Foods Nigeria",
+  "invoice_id": "INV-2024-004",
+  "date": "2024-25-03",
+  "bill_to": "Salamatu Giwa Farms",
+  "line_items": [
+    {
+      "description": "Rice (50kg)",
+      "qty": 20,
+      "unit_price": 38000,
+      "total": 760000,
+      "validation": "PASS"
+    },
+    {
+      "description": "Vegetable Oil",
+      "qty": 10,
+      "unit_price": 12500,
+      "total": 125000,
+      "validation": "PASS"
+    }
+  ],
+  "subtotal": 885000,
+  "vat_rate": 0.075,
+  "vat_amount": 66375,
+  "grand_total": 971375,
+  "validation_summary": {
+    "line_items_valid": true,
+    "subtotal_valid": true,
+    "vat_valid": true,
+    "grand_total_valid": false,
+    "date_format_valid": true,
+    "overall_status": "FAIL",
+    "errors_found": [
+        "Grandtotal error. the Grandtotal should be 961375 (885000 + 66375) not 971375"
+    ]
+  }
+}

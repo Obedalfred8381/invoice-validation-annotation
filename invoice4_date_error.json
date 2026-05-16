@@ -1,0 +1,37 @@
+{
+  "vendor": "Medix Pharmaceuticals",
+  "invoice_id": "INV-2024-004",
+  "date": "2024-23-03",
+  "bill_to": "Osagie Enterprises Ltd",
+  "line_items": [
+    {
+      "description": "Medical Gloves",
+      "qty": 50,
+      "unit_price": 2800,
+      "total": 140000,
+      "validation": "PASS"
+    },
+    {
+      "description": "Face Masks",
+      "qty": 100,
+      "unit_price": 850,
+      "total": 85000,
+      "validation": "PASS"
+    }
+  ],
+  "subtotal": 225000,
+  "vat_rate": 0.075,
+  "vat_amount": 16875,
+  "grand_total": 241875,
+  "validation_summary": {
+    "line_items_valid": true,
+    "subtotal_valid": true,
+    "vat_valid": true,
+    "grand_total_valid": true,
+    "date_format_valid": false,
+    "overall_status": "FAIL",
+    "errors_found": [
+        "date format error. the date format should be 2024- 03-23 (YYYY-MM-DD) not 2024-23-03"
+    ]
+  }
+}

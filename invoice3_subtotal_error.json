@@ -1,0 +1,39 @@
+{
+  "vendor": "Alpha Logistics Ltd",
+  "invoice_id": "INV-2024-003",
+  "date": "2024-03-20",
+  "bill_to": "Babban Gona Nigeria",
+  "line_items": [
+    {
+      "description": "Delivery Van Fuel",
+      "qty": 2,
+      "unit_price": 185000,
+      "total": 370000,
+      "validation": "PASS"
+    },
+    {
+      "description": "Truck Maintenance",
+      "qty": 1,
+      "unit_price": 450000,
+      "total": 450000,
+      "validation": "PASS"
+    }
+  ],
+  "subtotal": 720000,
+  "vat_rate": 0.075,
+  "vat_amount": 15150,
+  "grand_total": 217150,
+  "validation_summary": {
+    "line_items_valid": true,
+    "subtotal_valid": false,
+    "vat_valid": false,
+    "grand_total_valid": false,
+    "date_format_valid": true,
+    "overall_status": "FAIL",
+    "errors_found": [
+        "subtotal error. Subtotal should be 820000 (370000 + 450000) not 720000",
+        "VAT affected by subtotal error",
+        "Grandtotal affected by subtotal error"
+    ]
+  }
+}

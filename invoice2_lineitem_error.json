@@ -1,0 +1,41 @@
+{
+  "vendor": "TechSolutions Nigeria Ltd",
+  "invoice_id": "INV-2024-002",
+  "date": "2024-03-18",
+  "bill_to": "Obed Enterprises Ltd",
+  "line_items": [
+    {
+      "description": "Laptop",
+      "qty": 3,
+      "unit_price": 320000,
+      "total": 960000,
+      "validation": "PASS"
+    },
+    {
+      "description": "Wireless Mouse",
+      "qty": 10,
+      "unit_price": 8500,
+      "total": 95000,
+      "validation": "FAIL",
+      "error": "Total is wrong. Expected 85000 (10 x 8500) but found 95000."
+    }
+  ],
+  "subtotal": 1055000,
+  "vat_rate": 0.075,
+  "vat_amount": 15150,
+  "grand_total": 217150,
+  "validation_summary": {
+    "line_items_valid": false,
+    "subtotal_valid": false,
+    "vat_valid": false,
+    "grand_total_valid": false,
+    "date_format_valid": true,
+    "overall_status": "FAIL",
+    "errors_found": [
+        "Line item error : Wireless Mouse Total should be 85000 not 95000",
+        "subtotal affected by line item error",
+        "VAT affected by line item error",
+        "Grandtotal affected by line item error"
+    ]
+  }
+}

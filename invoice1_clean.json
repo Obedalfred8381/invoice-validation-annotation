@@ -1,0 +1,35 @@
+{
+  "vendor": "Acme Supplies Ltd",
+  "invoice_id": "INV-2024-001",
+  "date": "2024-03-15",
+  "bill_to": "Babban Gona Nigeria",
+  "line_items": [
+    {
+      "description": "Office Chair",
+      "qty": 4,
+      "unit_price": 28000,
+      "total": 112000,
+      "validation": "PASS"
+    },
+    {
+      "description": "Office Desk",
+      "qty": 2,
+      "unit_price": 45000,
+      "total": 90000,
+      "validation": "PASS"
+    }
+  ],
+  "subtotal": 202000,
+  "vat_rate": 0.075,
+  "vat_amount": 15150,
+  "grand_total": 217150,
+  "validation_summary": {
+    "line_items_valid": true,
+    "subtotal_valid": true,
+    "vat_valid": true,
+    "grand_total_valid": true,
+    "date_format_valid": true,
+    "overall_status": "PASS",
+    "errors_found": []
+  }
+}
